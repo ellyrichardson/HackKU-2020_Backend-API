@@ -12,12 +12,13 @@ class StatusAPIViewSet(viewsets.ModelViewSet):
 
     queryset = API.objects.all()
     serializer_class = APISerializer
-    #API.objects.all().delete()
+   # API.objects.all().delete()
 
 class OnOffAPIViewSet(viewsets.ModelViewSet):
 
     queryset = OnOffEndpoint.objects.all()
     serializer_class = OnOffEndpointSerializer
+   # OnOffEndpoint.objects.all().delete()
 
 class ClearSensorDataViewSet(viewsets.ModelViewSet):
 
